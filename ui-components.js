@@ -77,5 +77,4 @@ class MyButton extends HTMLElement {
     }
 }
 
-// Register the custom tag <my-button>
 customElements.define('my-button', MyButton);
