@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Component Submission</title>
+    
+    <script src="ui-components.js"></script>
+
+    <style>
+        body { padding: 60px; font-family: sans-serif; background-color: #f8f9fa; color: #333; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .section { margin-bottom: 40px; }
+        .row { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; margin-top: 15px; }
+        h3 { font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: #888; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Reusable UI Components</h1>
+        <p>Built with Vanilla JS (Custom Elements). No frameworks required.</p>
+
+        <div class="section">
+            <h3>1. Variants</h3>
+            <div class="row">
+                <my-button variant="primary">Primary Action</my-button>
+                <my-button variant="secondary">Secondary</my-button>
+                <my-button variant="danger">Danger / Delete</my-button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>2. Sizes</h3>
+            <div class="row">
+                <my-button size="small">Small</my-button>
+                <my-button size="medium">Medium Default</my-button>
+                <my-button size="large">Large Button</my-button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>3. States (Hover & Disabled)</h3>
+            <p><small>Hover over buttons to see the highlight and shadow effect.</small></p>
+            <div class="row">
+                <my-button variant="primary">Hover Me</my-button>
+                <my-button variant="primary" disabled>Disabled State</my-button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
